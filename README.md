@@ -1,0 +1,1 @@
+# diixize_store_ru
