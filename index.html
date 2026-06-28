@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио веб-разработчика</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="custom-cursor-dot"></div>
+    <div class="glow-ambience"><div class="glow-sphere"></div></div>
+
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="#" class="brand-logo">dixize<span> store</span></a>
+            <ul class="nav-list">
+                <li><a href="#advantages" class="nav-link-item">Преимущества</a></li>
+                <li><a href="#about" class="nav-link-item">Обо мне</a></li>
+                <li><a href="#portfolio" class="nav-link-item">Портфолио</a></li>
+                <li><a href="#contact" class="nav-link-item">Заказать</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="contact" class="contact-section scroll-reveal">
+        <div class="section-container">
+            <div class="form-container-box">
+                <form id="portfolio-interactive-form" name="contact" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact">
+                    
+                    <div class="input-wrapper">
+                        <label for="client_name">Ваше имя</label>
+                        <input type="text" name="name" id="client_name" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="client_contact">Telegram / Телефон</label>
+                        <input type="text" name="contact" id="client_contact" required>
+                    </div>
+
+                    <div class="price-counter-panel">
+                        <span class="counter-label">Предварительный расчет:</span>
+                        <div class="counter-value"><span id="live-price-display">750</span> ₽</div>
+                    </div>
+
+                    <button type="submit" id="form-submit-trigger" class="action-btn btn-prime btn-wide">
+                        <span class="btn-text">Отправить заявку</span>
+                        <div class="spinner hidden"></div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
